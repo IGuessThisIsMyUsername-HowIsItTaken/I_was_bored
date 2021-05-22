@@ -2,6 +2,7 @@
 
 let t0 = performance.now();
 // Custom function to implement square root algorithm
+// Very pointless, could've used built-in function
 const squareRoot = (x) => {
     let r = x;
     const precision = 10 ** (-10);
