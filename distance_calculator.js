@@ -31,8 +31,8 @@ const calculateDist = function(x1, y1, x2, y2) {
         let y_mid = ((y1 + y2) / 2);
 
 
-        if (String(x_mid).length > 6) x_mid = Number(x_mid.toFixed(2));
-        if (String(y_mid).length > 6) y_mid = Number(y_mid.toFixed(2));
+        String(x_mid).length > 6 ? x_mid = Number(x_mid.toFixed(2)) : x_mid;
+        String(y_mid).length > 6 ? y_mid = Number(y_mid.toFixed(2)) : y_mid;
 
         point.push(x_mid);
         point.push(y_mid);
